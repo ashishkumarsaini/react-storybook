@@ -1,0 +1,20 @@
+.section {
+    margin-bottom: 20px;
+}
+
+.component-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--test);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--test);
+}

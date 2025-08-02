@@ -1,20 +1,20 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Components } from 'components'
+import { Header } from 'components/header'
 import { Pages } from 'pages';
-
+import './app.css'
 
 const App = () => {
   return (
     <div className="App">
       <Router>
-
-        <Components.Header />
-        <Routes>
-          <Route path="/" element={<Pages.Home />} />
-          <Route path="/button" element={<Pages.Button />} />
-        </Routes>
+        <Header />
+        <div className='page-wrapper'>
+          <Routes>
+            <Route path="/" element={<Pages.Home />} />
+            <Route path="/button" element={<Pages.Button />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );

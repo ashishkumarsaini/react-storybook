@@ -1,0 +1,44 @@
+.button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.button--text {
+    background-color: transparent;
+    border: none;
+    color: var(--primary);
+}
+
+.button--contained {
+    background-color: var(--primary);
+    border: none;
+    color: var(--off-white);
+}
+
+.button--outlined {
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.button__size--large {
+    padding: 14px 24px;
+    font-size: 20px;
+}
+
+.button__size--medium {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.button__size--small {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.button__disabled {
+    opacity: 0.5;
+    cursor: default;
+}
